@@ -1,7 +1,16 @@
+// Libraries
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+// Components
+import { NewGameComponent } from './modules/game/pages/new-game/new-game.component';
+
+const routes: Routes = [
+  {
+    path: 'game/new',
+    component: NewGameComponent
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
